@@ -1,0 +1,43 @@
+body{
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+
+#header-container{
+    justify-content: center;
+}
+
+main img{
+    width: 50px;
+    user-select: none;
+    position: absolute;
+    animation: fly 4s infinite ease-in;
+}
+
+main #contagem-container{
+    text-shadow: 1px 1px 1px black;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+
+#contagem{
+    font-size: 100px;
+}
+
+/* animations */
+
+@keyframes fly {
+    from{
+        bottom: -100px; 
+        left: -100px;
+    } to{
+        bottom: 100%; 
+        left: 100%;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="assets/imgs/foguete.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/decolagem.css">
+    <title>SpaceX API</title>
+</head>
+<body>
+
+    <audio src="assets/audios/Comet - Samsung Ringtone [TubeRipper.com].mp3" autoplay></audio>
+    <audio src="assets/audios/contagem regressiva 10 segundos.mp3" autoplay></audio>
+
+    <header>
+        <div id="header-container">
+            <div id="logo-container">
+                <img src="assets/imgs/logo.png" alt="Logo SpaceX">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <img src="assets/imgs/foguete.png" alt="foguete">
+        <div id="contagem-container">
+            <span>PREPARAR PARA DECOLAR!</span>
+            <div id="contagem">10</div>
+        </div>
+    </main>
+
+
+    <script>
+        let contagem = document.querySelector("#contagem")
+        let cores = ['red', 'orange', 'yellow', 'blue', 'red', 'orange', 'yellow', 'blue', 'red']
+        let contador = 10;
+        setInterval(() => {
+            contador -= 1
+            contagem.innerHTML = contador
+            contagem.style.color = cores[contador - 1]
+            if (contador == 0){
+                window.location = "index.html"
+            }
+
+        }, 1000)
+    </script>
+</body>
+</html>

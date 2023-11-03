@@ -1,0 +1,372 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* GENERALS */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+    scroll-behavior: smooth;
+}
+
+:root{
+    --cor-azul: #0069D9;
+    --cor-azul-clara: #60ecff80;
+}
+
+body{
+    background-image: url("../imgs/stars_milky_way_space_116893_3840x2160.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+::selection{
+    background-color: var(--cor-azul-clara);
+}
+
+
+/* HEADER */
+
+header{
+    background-color: black;
+    color: white;
+}
+
+#header-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#logo-container{
+    min-width: 200px;
+    max-width: 200px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    user-select: none;
+    flex-wrap: wrap;
+}
+
+li{
+    width: 210px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 8px 12px;
+    transition: .1s ease-in-out;
+    font-weight: 600;
+}
+
+li:hover{
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+}
+
+
+/* MAIN */
+
+#main-content-container{
+    background-color: white;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 0.8);
+}
+
+#title{
+    text-align: center;
+    color: #00000040;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#filter-container{
+    display: flex;
+    justify-content: end;
+    user-select: none;
+}
+
+#input-container{
+    display: flex;
+    gap: 5px;
+    width: 330px;
+}
+
+#input-container input{
+    padding: 5px 10px;
+    width: 100%;
+    border-radius: 15px 5px 5px 15px;
+}
+
+#input-container input:focus{
+    outline: 1px solid rgb(0, 0, 0);
+}
+
+#input-container #btn-search{
+    display: grid;
+    align-items: center;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 5px 15px 15px 5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#input-container #btn-search:hover{
+    outline: 1px solid black;
+    background-color: black;
+    color: white;
+}
+
+
+/* CARDS */
+
+#cards-container{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#loading{
+    margin: auto;
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+    user-select: none;
+
+    border-radius: 50%;
+    border-top: 8px solid var(--cor-azul);
+    border-right: 8px solid #3c3c3c;
+    border-left: 8px solid #3c3c3c;
+    border-bottom: 8px solid #3c3c3c;
+    animation: spin 1s infinite ease-in-out;
+}
+
+.cards{
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 8px 6px 0px rgb(0, 0, 0, 0.30);
+    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.30); */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.cards:hover{
+    transform: scale(99%);
+    box-shadow: none;
+}
+
+.cards-imgs{
+    width: 150px;
+    margin: auto;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+
+/* Imagem para pesquisa não encotrada */
+
+#ilustracao-busca-nao-encotrada{
+    margin-bottom: 20px;
+}
+
+#texto-busca-nao-encontrada{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#img-busca-nao-encotrada-container{
+    width: 300px;
+    margin: auto;
+}
+
+/* BTN VOLTAR DO FILTER */
+
+#btn-voltar-container{
+    margin-top: 40px;
+    display: grid;
+    justify-content: center;
+}
+
+#btn-voltar, .btn-azul{
+    width: 150px;
+    background-color: var(--cor-azul);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    padding: 8px 10px;
+}
+
+#btn-voltar:hover{
+    transform: scale(101%);
+}
+
+/* footer */
+
+footer p{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 0.8);
+}
+
+/* FIM DO CONTEUDO MAIN */
+
+
+/* LOGO E BOTÃO SCROLL VOLTAR */
+
+#logo-itnsify-img{
+    width: 50px;
+    position: fixed;
+    left: 5px;
+    bottom: 5px;
+}
+
+#botao-scroll-top-container{
+    position: fixed;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255);
+    animation: up_and_down infinite .3s ease-in-out alternate-reverse;
+}
+
+#botao-scroll-top-container span{
+    font-weight: bold;
+}
+
+
+/* MODAL */
+
+#modal{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    width: 100vw;
+    height: 102vh;
+    z-index: 100;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+#video {
+    width: 100%;
+	max-width: 800px;
+	margin: 60px auto 30px auto;
+    border: 2px solid white;
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.1);
+}
+
+#video-area {
+    position: relative;
+	height: 0px;
+	background-color: #CCC;
+	padding: 0px 0px 56.25%;
+}
+
+#video-area iframe{
+    position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	border: 0px;
+}
+
+#modal p{
+    max-width: 800px;
+    margin: 0px auto 30px auto;
+}
+
+#modal #btn-sair-modal{
+    display: block;
+    margin: auto;
+}
+
+
+/* classes para uso and animations*/
+
+.btn-selected{
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+}
+
+.lancamento-encontrado{
+    width: 275px;
+    justify-self: center;
+}
+
+.overflow-hidden{
+    overflow: hidden !important;
+}
+
+.hide{
+    display: none;
+}
+
+.hide-btnScroll{
+    display: none !important;
+}
+
+/* animations */
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    } to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes up_and_down{
+    from{
+        bottom: 20px;
+    } to{
+        bottom: 25px;
+    }
+}
+
+
+/* Media */
+
+@media screen and (max-width: 350px) {
+    #img-busca-nao-encotrada-container{
+        width: 200px;
+    }
+}
