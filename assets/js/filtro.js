@@ -17,16 +17,16 @@ function buscarLancamento(){
         return
     }
 
-    ilustracao_busca_nao_encotrada.classList.remove('hide')
-    btn_voltar.classList.remove('hide')
+    removerClasse(ilustracao_busca_nao_encotrada, 'hide')
+    removerClasse(btn_voltar, 'hide')
   
     for (lancamento of (cards_containers.children)){
-        lancamento.classList.add('hide')
+        colocarClasse(lancamento, 'hide')
         if(lancamento.id.toLowerCase() == input_name_filter.value.toLowerCase()){
-            lancamento.classList.remove('hide')
-            lancamento.classList.add('lancamento-encontrado')
-            ilustracao_busca_nao_encotrada.classList.add('hide')
-            btn_voltar.classList.remove('hide')
+            removerClasse(lancamento, 'hide')
+            colocarClasse(lancamento, 'lancamento-encontrado')
+            colocarClasse(ilustracao_busca_nao_encotrada, 'hide')
+            removerClasse(btn_voltar, 'hide')
         }
     }
     input_name_filter.value = ''
@@ -35,9 +35,9 @@ function buscarLancamento(){
 //Função para Limpar a Busca
 function limparPesquisa(){
     for (lancamento of (cards_containers.children)){
-        lancamento.classList.remove('hide')
-        lancamento.classList.remove('lancamento-encontrado')
+        removerClasse(lancamento, 'hide')
+        removerClasse(lancamento, 'lancamento-encontrado')
     }
-    btn_voltar.classList.add('hide')
-    ilustracao_busca_nao_encotrada.classList.add('hide')
+    colocarClasse(btn_voltar, 'hide')
+    colocarClasse(ilustracao_busca_nao_encotrada, 'hide')
 }

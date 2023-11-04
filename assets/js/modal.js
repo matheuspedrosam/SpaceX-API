@@ -16,8 +16,9 @@ cards_containers.addEventListener("click", (e)=>{
     for (lancamentos of allData){
         if(e.target.id === lancamentos.name || e.target.parentNode.id === lancamentos.name){
             document.documentElement.scrollTo(0, 0)
-            modal.classList.remove("hide")
-            document.body.classList.add("overflow-hidden")
+            removerClasse(modal, "hide")
+            colocarClasse(document.body, "overflow-hidden")
+            lancamentos.details == null ? lancamentos.details = "Sem descrição" : null
             gerarModal(lancamentos.links.youtube_id, lancamentos.details)
         }
     }
@@ -25,6 +26,6 @@ cards_containers.addEventListener("click", (e)=>{
 
 function fecharModal(){
     modal.innerHTML = ""
-    modal.classList.add("hide")
-    document.body.classList.remove("overflow-hidden")
+    colocarClasse(modal, "hide")
+    removerClasse(document.body, "overflow-hidden")
 }

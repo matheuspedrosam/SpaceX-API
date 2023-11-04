@@ -2,9 +2,9 @@ const botaoScrollTop = qs("#botao-scroll-top-container")
 
 document.addEventListener("scroll", () => {
   if(document.documentElement.scrollTop > 300){
-    botaoScrollTop.classList.remove("hide-btnScroll")
+    removerClasse(botaoScrollTop, "hide-btnScroll")
   } else{
-    botaoScrollTop.classList.add("hide-btnScroll")
+    colocarClasse(botaoScrollTop, "hide-btnScroll")
   }
 })
 

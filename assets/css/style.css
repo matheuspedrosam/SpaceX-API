@@ -226,7 +226,8 @@ li:hover{
     transform: scale(101%);
 }
 
-/* footer */
+
+/* FOOTER */
 
 footer p{
     max-width: 1200px;
@@ -237,7 +238,7 @@ footer p{
     box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 0.8);
 }
 
-/* FIM DO CONTEUDO MAIN */
+/* FIM DO CONTEUDO PRINCIPAL */
 
 
 /* LOGO E BOTÃO SCROLL VOLTAR */

@@ -20,11 +20,10 @@ async function requisicaoLancamentos() {
 
     allData = [...dataUpcoming, ...dataPast];
 
-    const loading = qs("#loading");
-    loading.classList.add('hide'); // Removendo o Loading...
+    colocarClasse(qs("#loading"), 'hide') // Removendo o Loading...
 
     formatarLancamentos(dataPast);
-    
+
   } catch (error) {
     console.error('Erro na requisição da API:', error);
   }

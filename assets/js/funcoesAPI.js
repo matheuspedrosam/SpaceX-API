@@ -1,4 +1,9 @@
+//Funções gerais
 const qs = object => document.querySelector(object)
+const colocarClasse = (el, className) => el.classList.add(className)
+const removerClasse = (el, className) => el.classList.remove(className)
+
+
 const cards_containers = qs('#cards-container')
 
 function gerarDivParaLancamentosContainer(id, name, linkImg, data, foguete, descricao){
