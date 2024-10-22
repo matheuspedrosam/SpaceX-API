@@ -24,6 +24,11 @@ async function requisicaoLancamentos() {
 
     formatarLancamentos(dataPast);
 
+    VanillaTilt.init(document.querySelectorAll(".cards"), {
+      max: 15,
+      speed: 100
+    });
+
   } catch (error) {
     console.error('Erro na requisição da API:', error);
   }
