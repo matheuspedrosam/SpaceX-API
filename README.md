@@ -2,24 +2,24 @@
 
 ![image](https://github.com/matheuspedrosam/SpaceX-API/assets/99772255/fcd59af4-6567-416f-8aec-c73840e5f433)
 
-Link GitHub Pages: https://matheuspedrosam.github.io/SpaceX-API/
+Link of GitHub Pages: https://matheuspedrosam.github.io/SpaceX-API/
 
-Link video demonstração: [https://youtu.be/TL1G4qRQZpU](https://www.youtube.com/watch?v=wfN8SlpwdRw)
+Link of demostration video: [https://youtu.be/TL1G4qRQZpU](https://www.youtube.com/watch?v=wfN8SlpwdRw)
 
-## Considerações: ✏️
+## Considerations: ✏️
 
-* Eu comecei o projeto fazendo algo mais sério, apenas preto e branco, porém como o desafio tinha esse tema de lançamento de foguetes, utilizei um pouco de criatividade! (já que até gosto um pouco desse tema)
-  
-* Coloquei uma pagina extra apenas para fazer uma "brincadeira" com a contagem de lançamento de foguete, que após a contagem ela te redireciona para a página principal (o AutoPlay do som as vezes não funciona, por isso coloquei um vídeo demonstração)
+* I initially started the project with a more serious approach, sticking to a black-and-white theme. However, since the challenge revolved around rocket launches, I decided to add some creativity (I actually enjoy this theme quite a bit).
 
-* Utilizei display grid para deixar a página responsiva, e apenas 1 media query para diminuir o tamanho da "imagem de resultado não encontrado"
+* I included an extra page as a fun addition: a rocket launch countdown that redirects to the main page after completing the countdown. (The sound autoplay feature sometimes doesn't work, so I included a demo video for reference.)
 
-* A imagem de resultado não encontrado, eu escolhi essa (com um ET e um foguete) como outra brincadeira fazendo alusão ao lançamento raptado por alienígenas...
+* I used CSS Grid to make the page responsive, along with just one media query to adjust the size of the "not found" result image.
 
-* Estou terminando bem no final do prazo pois apenas consegui começar ontem (quinta-feira pela manhã)
+* The "not found" result image features an alien and a rocket, which I chose as a playful nod to an alien abduction during a rocket launch.
 
-* Com relação as tecnologias apenas utilizei HTML, CSS e JS puro. Como diz a expressão conhecida "na unha", acredito que tenham formas mais eficientes de realizar esse projeto utilizando Node, React (Mas como eu havia dito, ainda estou começando os estudos nesse frameworks)...
+* I’m submitting this project at the very last minute because I could only start working on it yesterday (Thursday morning).
 
-* Optei também por não utilizar o Bootstrap, até a animação de loading eu criei! (Obviamente em um cenário real onde fosse obrigatório utilizar essa tecnologia eu utilizaria)
+* Regarding the tech stack, I only used plain HTML, CSS, and JavaScript. As the saying goes, "done by hand." I’m aware there are more efficient ways to tackle this project using tools like Node.js or React (but I’m still at the beginner stage with these frameworks).
 
-* Gostei bastante do resultado e fico no aguardo do resposta! 🙂 (⭐⭐⭐⭐⭐)
+* I also chose not to use Bootstrap; even the loading animation was created from zero! (Of course, if the project had required Bootstrap, I would have used it.)
+
+* I’m really happy with the final result and look forward to your feedback! 🙂 (⭐⭐⭐⭐⭐)
